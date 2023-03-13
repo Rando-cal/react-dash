@@ -5,7 +5,7 @@ import Topbar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar.jsx"
 
-// import Team from "./scenes/team";
+import Team from "../src/scenes/team/index";
 // import Invoices from "./scenes/invoices";
 // import Contacts from "./scenes contacts";
 // import Bar from "./scenes/bar";
@@ -27,12 +27,12 @@ function App() {
         {/* resets css to defaults */}
         <CssBaseline /> 
         <div className="app">
-          {/* <Sidebar /> */}
+          <Sidebar />
           <main className="content">
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/team" element={<Team />} /> */}
+              <Route path="/team" element={<Team />} />
               {/* <Route path="/contacts" element={<Contacts />} /> */}
               {/* <Route path="/invoices" element={<Invoices />} /> */}
               {/* <Route path="/form" element={<Form />} /> */}
